@@ -1,0 +1,6 @@
+flask
+flask_mail
+requests
+six
+click
+sesamutils
