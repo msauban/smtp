@@ -106,6 +106,7 @@ def notify(pipe, reason, mail_header):
 def reset_pump(pipe):
     entities = request.get_json()
 
+    logger.debug("here")
     if(config.SEND_UNTIL_FIXED == "True"):
         header = {'Authorization': "Bearer {}".format(config.SESAM_JWT)}
         logger.debug("Resetting pump {}".format(pipe))
